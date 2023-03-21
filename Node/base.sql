@@ -1,0 +1,10 @@
+CREATE DATABASE CURSUSMALADE;
+\c CURSUSMALADE
+
+CREATE TABLE MALADE(
+    idMalade SERIAL PRIMARY KEY,
+    identification VARCHAR(300),
+    age int
+);
+
+INSERT INTO MALADE(identification, age) VALUES('Koto', 12);

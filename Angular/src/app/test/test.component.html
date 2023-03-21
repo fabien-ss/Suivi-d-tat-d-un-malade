@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="margin: auto;" class="table row">
+        <div class="col 12">
+        <table border="1">
+            <tr>
+                <th>Nom</th>
+                <th>Naissance</th>
+            </tr>
+            <tr *ngFor="let a of data">
+                
+                <td>{{ a.identification }}</td>
+                <td>{{ a.age }}</td>
+                <td><a [routerLink]="['/fichemalade', a.idMalade]">Choisir</a></td>
+            </tr>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
